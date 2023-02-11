@@ -1,13 +1,6 @@
 import Card from "../UI/Card";
 import ServiceItem from "./ServiceItem/ServiceItem";
 import classes from "./AvailableServices.module.css";
-import combineImage from "../../assets/combine.jpg";
-import cultivateImage from "../../assets/cultivate.jpg";
-import fertilizerImage from "../../assets/fertilizer.jpg";
-import planterImage from "../../assets/planter.jpg";
-import sprayImage from "../../assets/spray.jpg";
-import ploughImage from "../../assets/plough.jpg";
-import seedingImage from "../../assets/seeding.jpg";
 
 const DUMMY_SERVICES = [
   {
@@ -16,14 +9,14 @@ const DUMMY_SERVICES = [
     description:
       "Turn over the soil with a mouldboard plough. The most agressive tillage.",
     price: 105.66,
-    image: { ploughImage },
+    image: require("../../assets/plough.jpg"),
   },
   {
     id: "m2",
     name: "Cultivating",
     description: "Seedbed preperation. The least agressive tillage.",
     price: 89.56,
-    image: { cultivateImage },
+    image: require("../../assets/cultivate.jpg"),
   },
   {
     id: "m3",
@@ -31,7 +24,7 @@ const DUMMY_SERVICES = [
     description:
       "Seeds placed with an air drill. The least accurate seed placement.",
     price: 67.99,
-    image: { seedingImage },
+    image: require("../../assets/seeding.jpg"),
   },
   {
     id: "m4",
@@ -39,7 +32,7 @@ const DUMMY_SERVICES = [
     description:
       "Seeds placed with a planter. The most accurate seed placement.",
     price: 190.0,
-    image: { planterImage },
+    image: require("../../assets/planter.jpg"),
   },
   {
     id: "m5",
@@ -47,21 +40,21 @@ const DUMMY_SERVICES = [
     description:
       "Application of fertilizer, pesticide, herbacide with a high clearance sprayer.",
     price: 57.45,
-    image: { sprayImage },
+    image: require("../../assets/spray.jpg"),
   },
   {
     id: "m6",
     name: "Combine Harvesting",
     description: "Crops are harvested with a combine harvester.",
     price: 225.87,
-    image: { combineImage },
+    image: require("../../assets/combine.jpg"),
   },
   {
     id: "m7",
     name: "Fertilizing",
     description: "Apply solid fertilizer to the field.",
     price: 80.66,
-    image: { fertilizerImage },
+    image: require("../../assets/plough.jpg"),
   },
 ];
 
